@@ -3,12 +3,14 @@
 
   <head>    
     <meta charset="UTF=8" />
+    <link href="style.css" rel="stylesheet" />
     <title> The Basic Language of the web: HTML</title>
+
   </head>
 
   <body>
 
-<header>
+<header class="mainheader">
   <h1>📘 The Code Magazine</h1>
 
   <nav>
@@ -21,6 +23,7 @@
 </header>
 
   <article>
+    <p>Test</p>
     <header>
   <h2>The Basic Language of the web: HTML</h2>
 
@@ -31,7 +34,7 @@
       weight="50"
     />
 
-    <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+    <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
 
     <img src="img/post-img.jpg" alt="HTML code on a screen"
           width="500"
@@ -68,8 +71,10 @@
       <li>The closing tag</li>
       <li>The actual element</li>
     </ol>
+
     <p> You can learn more at
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        <a 
+        href="https://developer.mozilla.org/en-US/docs/Web/HTML"
         target="_blank"
         >MDN Web Docs</a>
     </p>
@@ -94,12 +99,12 @@
 
   </article>
   
+    
     <aside>
-      <aside>
       <h4><strong>Related posts</strong>
       </h4>
 
-        <ul>
+        <ul class="related-author-list">
           <li>
             <img 
             src="img/related-1.jpg" 
@@ -108,7 +113,7 @@
             weight="75"
             />
             <a href="#">How to Learn Web Development</a> 
-          <p>By Jonas Schmedtmann</p>
+          <p class="related-author">By Jonas Schmedtmann</p>
           </li>
 
           <li>
@@ -119,7 +124,7 @@
             weight="75"
             />
             <a href="#">The Unknown Powers of CSS</a> 
-            <p> By Jim Dillon</p>
+            <p class="related-author"> By Jim Dillon</p>
 
         
           </li>
@@ -132,7 +137,7 @@
             weight="75"
             />
             <a href="#">Why JavaScript is Awesome</a> 
-            <p>By Matilda</p>
+            <p class="related-author">By Matilda</p>
           </li>
         </ul>
     </aside>
@@ -140,8 +145,9 @@
   
 
   <footer>
-    Copyright &copy; 2027 by The Code Magazine.
-
+    <p id="copyright">
+      Copyright &copy; 2027 by The Code Magazine.
+    </p>
   </footer>
   </body>
 </html> 
